@@ -101,44 +101,47 @@
         </Source>
     </Package>
     <Package>
-        <Name>budgie-weather-applet</Name>
-        <Summary xml:lang="en">A weather applet for Budgie Desktop</Summary>
-        <Description xml:lang="en">A weather applet for Budgie Desktop. OpenWeatherMap is used for getting weather data.</Description>
+        <Name>budgie-extra</Name>
+        <Summary xml:lang="en">additional Budgie Desktop enhancements for the user experience</Summary>
+        <Description xml:lang="en">additional Budgie Desktop enhancements for the user experience</Description>
         <PartOf>desktop.budgie</PartOf>
-        <License>GPL-2-or-later</License>
+        <License>GPL-3-or-later</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="76">libgtk-3</Dependency>
-            <Dependency releaseFrom="45">glib2</Dependency>
-            <Dependency releaseFrom="49">glibc</Dependency>
-            <Dependency releaseFrom="163">budgie-desktop</Dependency>
+            <Dependency releaseFrom="81">libgtk-3</Dependency>
             <Dependency releaseFrom="15">libpeas</Dependency>
-            <Dependency releaseFrom="19">libgweather</Dependency>
+            <Dependency releaseFrom="11">libgee</Dependency>
             <Dependency releaseFrom="14">libjson-glib</Dependency>
-            <Dependency releaseFrom="19">libsoup</Dependency>
+            <Dependency releaseFrom="52">glibc</Dependency>
+            <Dependency releaseFrom="46">glib2</Dependency>
+            <Dependency releaseFrom="170">budgie-desktop</Dependency>
+            <Dependency>python3-pyudev</Dependency>
+            <Dependency>xinput</Dependency>
+            <Dependency>xrandr</Dependency>
+            <Dependency>xprop</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="1">
-                <Date>2018-05-02</Date>
-                <Version>0.0.1</Version>
+            <Update release="2">
+                <Date>2018-10-26</Date>
+                <Version>0.6.1</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Devil505</Name>
-                <Email>devil505linux@gmail.com</Email>
+                <Email>devil505@tuta.io</Email>
             </Update>
         </History>
         <BuildHost>solus</BuildHost>
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>119905</InstalledSize>
-        <PackageSize>29242</PackageSize>
-        <PackageHash>bba87e94daf364ff1a499b784948b3025cea5e3e</PackageHash>
-        <PackageURI>budgie-weather-applet-0.0.1-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>5541338</InstalledSize>
+        <PackageSize>1815045</PackageSize>
+        <PackageHash>6a6deb778500c2fe5c7d426e7755a16e10eaaa54</PackageHash>
+        <PackageURI>budgie-extra-0.6.1-2-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>budgie-weather-applet</Name>
+            <Name>budgie-extra</Name>
             <Packager>
                 <Name>Devil505</Name>
-                <Email>devil505linux@gmail.com</Email>
+                <Email>devil505@tuta.io</Email>
             </Packager>
         </Source>
     </Package>
@@ -284,6 +287,48 @@
         </Source>
     </Package>
     <Package>
+        <Name>budgie-network-applet</Name>
+        <Summary xml:lang="en">Network applet for Budgie Desktop</Summary>
+        <Description xml:lang="en">Network applet for Budgie Desktop.</Description>
+        <PartOf>desktop.budgie</PartOf>
+        <License>GNU General Public License v3.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="31">network-manager-applet</Dependency>
+            <Dependency releaseFrom="48">glib2</Dependency>
+            <Dependency releaseFrom="52">glibc</Dependency>
+            <Dependency releaseFrom="170">budgie-desktop</Dependency>
+            <Dependency releaseFrom="44">network-manager</Dependency>
+            <Dependency releaseFrom="15">libpeas</Dependency>
+            <Dependency releaseFrom="11">libgee</Dependency>
+            <Dependency releaseFrom="81">libgtk-3</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="2">
+                <Date>2018-12-13</Date>
+                <Version>2.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Automated Package Build</Name>
+                <Email>no.email.set.in.config</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>296817</InstalledSize>
+        <PackageSize>68715</PackageSize>
+        <PackageHash>44020e5d9a204b1376b4931b0b6855db332922f8</PackageHash>
+        <PackageURI>budgie-network-applet-2.0-2-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>budgie-network-applet</Name>
+            <Packager>
+                <Name>Automated Package Build</Name>
+                <Email>no.email.set.in.config</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>budgie-sysmonitor-applet</Name>
         <Summary xml:lang="en">Application indicator to show various system parameters</Summary>
         <Description xml:lang="en">Application indicator to show various system parameters.</Description>
@@ -316,47 +361,44 @@
         </Source>
     </Package>
     <Package>
-        <Name>budgie-extra</Name>
-        <Summary xml:lang="en">additional Budgie Desktop enhancements for the user experience</Summary>
-        <Description xml:lang="en">additional Budgie Desktop enhancements for the user experience</Description>
+        <Name>budgie-weather-applet</Name>
+        <Summary xml:lang="en">A weather applet for Budgie Desktop</Summary>
+        <Description xml:lang="en">A weather applet for Budgie Desktop. OpenWeatherMap is used for getting weather data.</Description>
         <PartOf>desktop.budgie</PartOf>
-        <License>GPL-3-or-later</License>
+        <License>GPL-2-or-later</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="81">libgtk-3</Dependency>
+            <Dependency releaseFrom="76">libgtk-3</Dependency>
+            <Dependency releaseFrom="45">glib2</Dependency>
+            <Dependency releaseFrom="49">glibc</Dependency>
+            <Dependency releaseFrom="163">budgie-desktop</Dependency>
             <Dependency releaseFrom="15">libpeas</Dependency>
-            <Dependency releaseFrom="11">libgee</Dependency>
+            <Dependency releaseFrom="19">libgweather</Dependency>
             <Dependency releaseFrom="14">libjson-glib</Dependency>
-            <Dependency releaseFrom="52">glibc</Dependency>
-            <Dependency releaseFrom="46">glib2</Dependency>
-            <Dependency releaseFrom="170">budgie-desktop</Dependency>
-            <Dependency>python3-pyudev</Dependency>
-            <Dependency>xinput</Dependency>
-            <Dependency>xrandr</Dependency>
-            <Dependency>xprop</Dependency>
+            <Dependency releaseFrom="19">libsoup</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="2">
-                <Date>2018-10-26</Date>
-                <Version>0.6.1</Version>
+            <Update release="1">
+                <Date>2018-05-02</Date>
+                <Version>0.0.1</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Devil505</Name>
-                <Email>devil505@tuta.io</Email>
+                <Email>devil505linux@gmail.com</Email>
             </Update>
         </History>
         <BuildHost>solus</BuildHost>
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>5541338</InstalledSize>
-        <PackageSize>1815045</PackageSize>
-        <PackageHash>6a6deb778500c2fe5c7d426e7755a16e10eaaa54</PackageHash>
-        <PackageURI>budgie-extra-0.6.1-2-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>119905</InstalledSize>
+        <PackageSize>29242</PackageSize>
+        <PackageHash>bba87e94daf364ff1a499b784948b3025cea5e3e</PackageHash>
+        <PackageURI>budgie-weather-applet-0.0.1-1-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>budgie-extra</Name>
+            <Name>budgie-weather-applet</Name>
             <Packager>
                 <Name>Devil505</Name>
-                <Email>devil505@tuta.io</Email>
+                <Email>devil505linux@gmail.com</Email>
             </Packager>
         </Source>
     </Package>
