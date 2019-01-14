@@ -101,6 +101,38 @@
         </Source>
     </Package>
     <Package>
+        <Name>fonts-crosextra</Name>
+        <Summary xml:lang="en">Caladea &amp; Carlito fonts</Summary>
+        <Description xml:lang="en">Replacement fonts for Calibri and Cambri.</Description>
+        <PartOf>desktop.font</PartOf>
+        <License>OFL (SIL Open Font License)</License>
+        <History>
+            <Update release="1">
+                <Date>2018-11-15</Date>
+                <Version>2013</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Automated Package Build</Name>
+                <Email>no.email.set.in.config</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>3008188</InstalledSize>
+        <PackageSize>927218</PackageSize>
+        <PackageHash>26a9410caee6cbf8fdaebf5e054706ae53f3150c</PackageHash>
+        <PackageURI>fonts-crosextra-2013-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>fonts-crosextra</Name>
+            <Packager>
+                <Name>Automated Package Build</Name>
+                <Email>no.email.set.in.config</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>budgie-extra</Name>
         <Summary xml:lang="en">additional Budgie Desktop enhancements for the user experience</Summary>
         <Description xml:lang="en">additional Budgie Desktop enhancements for the user experience</Description>
@@ -108,40 +140,46 @@
         <License>GPL-3-or-later</License>
         <RuntimeDependencies>
             <Dependency releaseFrom="81">libgtk-3</Dependency>
+            <Dependency releaseFrom="40">libcairo</Dependency>
+            <Dependency releaseFrom="52">glibc</Dependency>
+            <Dependency releaseFrom="188">budgie-desktop</Dependency>
+            <Dependency releaseFrom="36">gdk-pixbuf</Dependency>
             <Dependency releaseFrom="15">libpeas</Dependency>
             <Dependency releaseFrom="11">libgee</Dependency>
             <Dependency releaseFrom="14">libjson-glib</Dependency>
-            <Dependency releaseFrom="52">glibc</Dependency>
-            <Dependency releaseFrom="46">glib2</Dependency>
-            <Dependency releaseFrom="170">budgie-desktop</Dependency>
+            <Dependency releaseFrom="48">glib2</Dependency>
+            <Dependency releaseFrom="22">libsoup</Dependency>
+            <Dependency>python-psutil</Dependency>
             <Dependency>python3-pyudev</Dependency>
+            <Dependency>wmctrl</Dependency>
+            <Dependency>xdotool</Dependency>
             <Dependency>xinput</Dependency>
             <Dependency>xrandr</Dependency>
             <Dependency>xprop</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="2">
-                <Date>2018-10-26</Date>
-                <Version>0.6.1</Version>
+            <Update release="3">
+                <Date>2019-01-14</Date>
+                <Version>0.7.0</Version>
                 <Comment>Packaging update</Comment>
-                <Name>Devil505</Name>
-                <Email>devil505@tuta.io</Email>
+                <Name>Automated Package Build</Name>
+                <Email>no.email.set.in.config</Email>
             </Update>
         </History>
         <BuildHost>solus</BuildHost>
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>5541338</InstalledSize>
-        <PackageSize>1815045</PackageSize>
-        <PackageHash>6a6deb778500c2fe5c7d426e7755a16e10eaaa54</PackageHash>
-        <PackageURI>budgie-extra-0.6.1-2-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>1564964</InstalledSize>
+        <PackageSize>360675</PackageSize>
+        <PackageHash>7f88f748285c655ae6c4a51db60524adc59f0bb4</PackageHash>
+        <PackageURI>budgie-extra-0.7.0-3-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>budgie-extra</Name>
             <Packager>
-                <Name>Devil505</Name>
-                <Email>devil505@tuta.io</Email>
+                <Name>Automated Package Build</Name>
+                <Email>no.email.set.in.config</Email>
             </Packager>
         </Source>
     </Package>
@@ -255,15 +293,15 @@
         </Source>
     </Package>
     <Package>
-        <Name>fonts-crosextra</Name>
-        <Summary xml:lang="en">Caladea &amp; Carlito fonts</Summary>
-        <Description xml:lang="en">Replacement fonts for Calibri and Cambri.</Description>
-        <PartOf>desktop.font</PartOf>
-        <License>OFL (SIL Open Font License)</License>
+        <Name>budgie-sysmonitor-applet</Name>
+        <Summary xml:lang="en">Application indicator to show various system parameters</Summary>
+        <Description xml:lang="en">Application indicator to show various system parameters.</Description>
+        <PartOf>desktop.budgie</PartOf>
+        <License>GNU General Public License v3.0</License>
         <History>
             <Update release="1">
-                <Date>2018-11-15</Date>
-                <Version>2013</Version>
+                <Date>2018-11-16</Date>
+                <Version>0.8.2</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Automated Package Build</Name>
                 <Email>no.email.set.in.config</Email>
@@ -273,13 +311,13 @@
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>3008188</InstalledSize>
-        <PackageSize>927218</PackageSize>
-        <PackageHash>26a9410caee6cbf8fdaebf5e054706ae53f3150c</PackageHash>
-        <PackageURI>fonts-crosextra-2013-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>54151</InstalledSize>
+        <PackageSize>13331</PackageSize>
+        <PackageHash>ee3fa05fcc72b879a8a947c7d57e5b56c460ddc0</PackageHash>
+        <PackageURI>budgie-sysmonitor-applet-0.8.2-1-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>fonts-crosextra</Name>
+            <Name>budgie-sysmonitor-applet</Name>
             <Packager>
                 <Name>Automated Package Build</Name>
                 <Email>no.email.set.in.config</Email>
@@ -329,38 +367,6 @@
         </Source>
     </Package>
     <Package>
-        <Name>budgie-sysmonitor-applet</Name>
-        <Summary xml:lang="en">Application indicator to show various system parameters</Summary>
-        <Description xml:lang="en">Application indicator to show various system parameters.</Description>
-        <PartOf>desktop.budgie</PartOf>
-        <License>GNU General Public License v3.0</License>
-        <History>
-            <Update release="1">
-                <Date>2018-11-16</Date>
-                <Version>0.8.2</Version>
-                <Comment>Packaging update</Comment>
-                <Name>Automated Package Build</Name>
-                <Email>no.email.set.in.config</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>54151</InstalledSize>
-        <PackageSize>13331</PackageSize>
-        <PackageHash>ee3fa05fcc72b879a8a947c7d57e5b56c460ddc0</PackageHash>
-        <PackageURI>budgie-sysmonitor-applet-0.8.2-1-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>budgie-sysmonitor-applet</Name>
-            <Packager>
-                <Name>Automated Package Build</Name>
-                <Email>no.email.set.in.config</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
         <Name>budgie-weather-applet</Name>
         <Summary xml:lang="en">A weather applet for Budgie Desktop</Summary>
         <Description xml:lang="en">A weather applet for Budgie Desktop. OpenWeatherMap is used for getting weather data.</Description>
@@ -399,6 +405,44 @@
             <Packager>
                 <Name>Devil505</Name>
                 <Email>devil505linux@gmail.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>wmctrl</Name>
+        <Summary xml:lang="en">Use wmctrl to manage desktop window</Summary>
+        <Description xml:lang="en">A command line tool to interact with an EWMH/NetWM compatible X Window Manager.</Description>
+        <PartOf>system.utils</PartOf>
+        <License>GPL-2 (General Public License)</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="52">glibc</Dependency>
+            <Dependency releaseFrom="48">glib2</Dependency>
+            <Dependency releaseFrom="7">libxmu</Dependency>
+            <Dependency releaseFrom="21">libx11</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2019-01-14</Date>
+                <Version>1.07</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Automated Package Build</Name>
+                <Email>no.email.set.in.config</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>56466</InstalledSize>
+        <PackageSize>17205</PackageSize>
+        <PackageHash>925b15590d836c06fb655b884db541f4b96f81c0</PackageHash>
+        <PackageURI>wmctrl-1.07-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>wmctrl</Name>
+            <Packager>
+                <Name>Automated Package Build</Name>
+                <Email>no.email.set.in.config</Email>
             </Packager>
         </Source>
     </Package>
